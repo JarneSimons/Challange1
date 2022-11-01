@@ -13,6 +13,7 @@ export default function App() {
           style={styles.shoppingImg}
           source={require('../Challange1/assets/shoppingCart/shopping-cart.png')}
           />
+          <Text style={styles.shoppingNumber}>1</Text>
       </View>
       
       <StatusBar style="auto" />
@@ -41,7 +42,11 @@ const styles = StyleSheet.create({
     height: 40,
     marginLeft: 330,
     marginTop: -35,
-
+  },
+  shoppingNumber: {
+    fontSize: 30,
+    marginLeft: 370,
+    marginTop: -25,
   }
 
 
