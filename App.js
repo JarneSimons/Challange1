@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View, Image } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 
 export default function App() {
@@ -7,6 +7,12 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.containerHeader}>
         <Text style={styles.header}>Bookshop </Text>
+      </View>
+      <View>
+          <Image 
+          style={styles.shoppingImg}
+          source={require('../Challange1/assets/shoppingCart/shopping-cart.png')}
+          />
       </View>
       
       <StatusBar style="auto" />
@@ -21,18 +27,14 @@ const styles = StyleSheet.create({
     //alignItems: 'center',
     //justifyContent: 'center',
   },
-
   header: {
     fontSize: 32,
     fontWeight: "bold",
   },
-
   containerHeader: {
     marginLeft: 20,
     marginTop: 40,
-    
-
-  }
+  },
 
 
 
