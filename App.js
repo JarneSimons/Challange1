@@ -35,6 +35,14 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginTop: 40,
   },
+  shoppingImg: {
+    maxWidth: '100%',
+    width: 40,
+    height: 40,
+    marginLeft: 330,
+    marginTop: -35,
+
+  }
 
 
 
