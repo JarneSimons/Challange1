@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     //justifyContent: 'center',
   },
   header: {
-    fontSize: 32,
+    fontSize: 40,
     fontWeight: "bold",
   },
   containerHeader: {
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     marginLeft: 330,
-    marginTop: -35,
+    marginTop: -40,
   },
   shoppingNumber: {
     fontSize: 30,
