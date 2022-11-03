@@ -3,11 +3,11 @@ import { Button, StyleSheet, Text, View, Image, Alert } from 'react-native';
 const Books = (props) => {
     return (
         <View style={styles.containerBooks}>
-            <Text style={styles.headerFirstBook}>Book title 1</Text>
-            <Text style={styles.author}>By Some Random dude</Text>
+            <Text style={styles.headerFirstBook}>{props.header}</Text>
+            <Text style={styles.author}>{props.author}</Text>
             <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, nulla sit amet pellentesque ultircies, magna nisl vulputate urna, quis feugiat purus enim id ex. </Text>
             <View style={styles.boxButton}>
-                <Text style={styles.isbn}>ISBN 978-8-2165-1860-1</Text>
+                <Text style={styles.isbn}>{props.isbn}</Text>
                 <Button style={styles.button} title='READ' color='black'/>
             </View>
         
