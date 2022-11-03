@@ -15,7 +15,7 @@ export default function App() {
           />
           <Text style={styles.shoppingNumber}>1</Text>
       </View>
-      <View>
+      <View style={styles.containerBooks}>
         <Text style={styles.headerFirstBook}>Book title 1</Text>
         <Text style={styles.author}>By Some Random dude</Text>
         <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, nulla sit amet pellentesque ultircies, magna nisl vulputate urna, quis feugiat purus enim id ex. </Text>
@@ -62,31 +62,31 @@ const styles = StyleSheet.create({
   headerFirstBook: {
     fontSize: 26,
     fontWeight: 'bold',
-    marginLeft: 20,
     marginTop: 20,
   },
   author: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginLeft: 20,
   },
   bio: {
-    marginLeft: 20,
     marginTop: 20,
-    marginRight: 30,
   },
   isbn:{
-    //marginLeft: 20,
-    //marginTop: 20,
+   
   },
   boxButton: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    
+    marginTop: 20,
+    marginBottom: 15,
+  },
+  containerBooks: {
+    borderBottomColor: 'black',
+    borderBottomWidth: 3,
     marginLeft: 20,
     marginRight: 30,
-    marginTop: 20,
-    
   }
 
 
