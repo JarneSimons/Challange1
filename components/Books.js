@@ -1,4 +1,4 @@
-import { Button, StyleSheet, Text, View, Image, Alert } from 'react-native';
+import { Button, StyleSheet, Text, View, Image, Alert, TouchableNativeFeedback } from 'react-native';
 
 const Books = (props) => {
     return (
@@ -8,7 +8,9 @@ const Books = (props) => {
             <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, nulla sit amet pellentesque ultircies, magna nisl vulputate urna, quis feugiat purus enim id ex. </Text>
             <View style={styles.boxButton}>
                 <Text style={styles.isbn}>{props.isbn}</Text>
-                <Button style={styles.button} title='READ' color='black'/>
+                <TouchableNativeFeedback>
+                  <Text style={styles.buttons}>READ</Text>
+                </TouchableNativeFeedback>
             </View>
         
       </View>
@@ -44,5 +46,10 @@ const styles = StyleSheet.create ({
     borderBottomWidth: 3,
     marginLeft: 20,
     marginRight: 30,
+  },
+  buttons:{
+    borderColor: 'black',
+    borderWidth: 3,
+    padding: 5,
   }
 });
