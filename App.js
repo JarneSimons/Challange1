@@ -15,6 +15,13 @@ export default function App() {
           />
           <Text style={styles.shoppingNumber}>1</Text>
       </View>
+      <View>
+        <Text>Book title 1</Text>
+        <Text>By Some Random dude</Text>
+        <Text>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</Text>
+        <Text>ISBN 978-8-2165-1860-1</Text>
+        <Button title='READ' color='black'/>
+      </View>
       
       <StatusBar style="auto" />
     </View>
