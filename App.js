@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, Image, Alert } from 'react-native';
+import { Button, StyleSheet, Text, View, Image, Alert, ScrollView } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 
 import Books from './components/Books';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.containerHeader}>
         <Text style={styles.header}>Bookshop</Text>
       </View>
@@ -30,7 +30,7 @@ export default function App() {
         <Books header="The Little Prince" author="Antoine de Saint-Exupéry" isbn="ISBN 978-0156012195"></Books>
       </View>
       <StatusBar style="auto" />
-    </View>
+    </ScrollView>
   );
 }
 
