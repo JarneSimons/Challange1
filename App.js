@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
-        <Text style={styles.header}>Bookshop </Text>
+        <Text style={styles.header}>Bookshop test</Text>
       </View>
       <View>
           <Image 
