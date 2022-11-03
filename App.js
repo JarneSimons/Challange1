@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, Image } from 'react-native';
+import { Button, StyleSheet, Text, View, Image, Alert } from 'react-native';
 import { Header } from 'react-native/Libraries/NewAppScreen';
 
 export default function App() {
@@ -18,9 +18,12 @@ export default function App() {
       <View>
         <Text style={styles.headerFirstBook}>Book title 1</Text>
         <Text style={styles.author}>By Some Random dude</Text>
-        <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</Text>
-        <Text style={styles.isbn}>ISBN 978-8-2165-1860-1</Text>
-        <Button style={styles.button} title='READ' color='black' />
+        <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, nulla sit amet pellentesque ultircies, magna nisl vulputate urna, quis feugiat purus enim id ex. </Text>
+        <View style={styles.boxButton}>
+          <Text style={styles.isbn}>ISBN 978-8-2165-1860-1</Text>
+          <Button style={styles.button} title='READ' color='black'/>
+        </View>
+        
       </View>
       
       <StatusBar style="auto" />
@@ -70,11 +73,20 @@ const styles = StyleSheet.create({
   bio: {
     marginLeft: 20,
     marginTop: 20,
-    marginRight: 20,
+    marginRight: 30,
   },
   isbn:{
+    //marginLeft: 20,
+    //marginTop: 20,
+  },
+  boxButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     marginLeft: 20,
+    marginRight: 30,
     marginTop: 20,
+    
   }
 
 
