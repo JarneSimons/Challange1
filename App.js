@@ -17,6 +17,18 @@ export default function App() {
           />
           <Text style={styles.shoppingNumber}>1</Text>
       </View>
+      <View>
+        <Books header="The lord of the Rings" author="J.R.R. Tolkien" isbn="ISBN 978-0261103252"></Books>
+      </View>
+      <View>
+        <Books header="Harry Potter and the Philosopher's Stone" author="J.K. Rowling" isbn="ISBN 9780590353427"></Books>
+      </View>
+      <View>
+        <Books header="The Great Gatsby" author="F. Scott Fitzgerald" isbn="ISBN 9780099541530"></Books>
+      </View>
+      <View>
+        <Books header="The Little Prince" author="Antoine de Saint-Exupéry" isbn="ISBN 978-0156012195"></Books>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
