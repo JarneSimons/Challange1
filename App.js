@@ -19,7 +19,7 @@ export default function App() {
         <Text style={styles.headerFirstBook}>Book title 1</Text>
         <Text style={styles.author}>By Some Random dude</Text>
         <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</Text>
-        <Text style={styles.isb}>ISBN 978-8-2165-1860-1</Text>
+        <Text style={styles.isbn}>ISBN 978-8-2165-1860-1</Text>
         <Button style={styles.button} title='READ' color='black' />
       </View>
       
@@ -54,7 +54,29 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginLeft: 370,
     marginTop: -25,
+  },
+  //boekenopmaak
+  headerFirstBook: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    marginLeft: 20,
+    marginTop: 20,
+  },
+  author: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginLeft: 20,
+  },
+  bio: {
+    marginLeft: 20,
+    marginTop: 20,
+    marginRight: 20,
+  },
+  isbn:{
+    marginLeft: 20,
+    marginTop: 20,
   }
+
 
 
 
