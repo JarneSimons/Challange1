@@ -8,7 +8,7 @@ export default function App() {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.containerHeader}>
-        <Text style={styles.header}>BookshopTest</Text>
+        <Text style={styles.header}>Bookshop</Text>
       </View>
       <View>
           <Image 
