@@ -4,10 +4,16 @@ function read(){
   console.log("book read")
 }
 
+function clickedTitle(){
+  console.log("Book title read")
+}
+
 const Books = (props) => {
     return (
         <View style={styles.containerBooks}>
+          <TouchableNativeFeedback onPress={()=>clickedTitle()}>
             <Text style={styles.headerFirstBook}>{props.header}</Text>
+          </TouchableNativeFeedback>
             <Text style={styles.author}>{props.author}</Text>
             <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, nulla sit amet pellentesque ultircies, magna nisl vulputate urna, quis feugiat purus enim id ex. </Text>
             <View style={styles.boxButton}>
