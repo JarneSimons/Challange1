@@ -1,5 +1,9 @@
 import { Button, StyleSheet, Text, View, Image, Alert, TouchableNativeFeedback } from 'react-native';
 
+function read(){
+  console.log("book read")
+}
+
 const Books = (props) => {
     return (
         <View style={styles.containerBooks}>
@@ -8,7 +12,7 @@ const Books = (props) => {
             <Text style={styles.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus, nulla sit amet pellentesque ultircies, magna nisl vulputate urna, quis feugiat purus enim id ex. </Text>
             <View style={styles.boxButton}>
                 <Text style={styles.isbn}>{props.isbn}</Text>
-                <TouchableNativeFeedback>
+                <TouchableNativeFeedback onPress={()=>read()}>
                   <Text style={styles.buttons}>READ</Text>
                 </TouchableNativeFeedback>
             </View>
